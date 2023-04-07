@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pasta Collection</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <script type="text/javascript" src="./airtable.browser.js" defer></script>
+
+    <link rel="icon" href="./assets/cursor.svg">
+
+</head>
+    <body>
+        <header>
+
+        </header>
+        <main class="column-container">
+            <h1>PASTA COLLECTION</h1>
+
+            <div class="column1">
+
+                <div class="button-wrapper">
+                <div class="filters-container">
+                    <h2 class="subtitle">LENGTH</h2>
+                    <div class="lengths"></div>
+
+                    <h2 class="subtitle">WIDTH</h2>
+                    <div class="widths"></div>
+                    
+                    <h2 class="subtitle">STUFFED</h2>
+                    <div class="stuffeds"></div>
+                
+                    <h2 class="subtitle">FUNCTION</h2>
+                    <div class="funcs"></div>
+                    
+                    <h2 class="subtitle">SHAPE</h2>
+                    <div class="shapes"></div>
+                                <br>
+                                <br>
+                                <hr>
+                    <a href="./airtable.html"><h2>RESET FILTERS</h2></a>
+                </div>
+                </div>
+            </div>
+            
+            <div class="column2">
+                <div class="content-container"></div>
+            </div>
+        </main>
+        
+        <div id="pasta-info">
+            <div><button id="close">X</button></div>
+            <div><img src="./assets/bg.png" id="pastaImage"></div>
+            <div id="info-section">
+                <p id="pastaName"></p>
+                <p id="pastaLength"></p>
+                <p id="pastaWidth"></p>
+                <p id="pastaShape"></p>
+                <p id="pastaStuffed"></p>
+                <p id="pastaFunction"></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="./script.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html{
+    margin: 30px;
+    margin-left: 3%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Lato, sans-serif;
+    font-size: 60pt;
+    font-weight: 900;
+    line-height: 10px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    display: grid;
+    opacity: 10%;
+    text-align: right;
+}
+
+h1:hover{
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+h2{
+    font-family: Lato, sans-serif;
+    font-size: 10pt;
+    margin-top: 40px;
+    color: #808080;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    color: gray;
+    border: 0;
+    margin-right: 2px;
+}
+
+button:hover{
+    cursor: pointer;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+button:active{
+    background-color: rgb(239, 202, 65);
+}
+
+.column-container{
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+}
+
+.column1 {
+    float: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.column2 {
+    overflow: scroll;
+    float: left;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+.content-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    justify-items:center;
+    height: fit-content;
+    padding-top: 25px;
+}
+
+img{
+    width: 145px;
+    height: 145px;
+    display: grid;
+}
+
+img:hover{
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    opacity: 45%;
+}
+
+hr{
+    opacity: 30%;
+}
+
+.drawer-content--image:hover{
+    opacity: 50%;
+}
+
+#pasta-info {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 60px;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: 100px 700px;
+}
+
+#close{
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: flex-end;
+    float: left;   
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+
+#pastaImage{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: 0%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    float: right;
+}
+
+#info-section{
+    margin-left: 100px;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#pastaName{
+    font-weight: 800;
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 768px){
+    html{
+        margin: 20px;
+        margin-left: 3%;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    h1{
+        font-family: Lato, sans-serif;
+        font-size: 20pt;
+        font-weight: 900;
+        line-height: 10px;
+        grid-column-start: 0;
+        grid-column-end: 3;
+        grid-row-start: 0;
+        grid-row-end: 1;
+        display: grid;
+        opacity: 10%;
+        text-align: center;
+    }
+
+    .column-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    
+    .column1 {
+        float: left;
+        grid-column-start: 0;
+        grid-column-end: 1;
+        z-index: 2;
+    }
+    
+    .column2 {
+        float: left;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        z-index: 2;
+        margin-left: 20px;
+    }
+
+    .content-container{
+        display: grid;
+        grid-template-columns: repeat(1, 50fr);
+        grid-template-rows: repeat(50, 1fr);
+        grid-gap: 25px;
+        justify-items: center;
+        align-items: center;
+        justify-items:center;
+        height: fit-content;
+        padding-top: 25px;
+    }
+
+    #pasta-info {
+        width: 768px;
+        display: none;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 60px;
+        grid-template-rows: 50px 250px 300px;
+        grid-template-columns: 300px;
+    }
+    
+    #close{
+        text-align: center;
+        margin-bottom: 20px;
+        align-items: flex-end;
+        float: left;   
+
+    }
+    
+    #pastaImage{
+        display: grid;
+        width: 200px;
+        height: 200px;
+        margin: 0%;
+        float: left;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    
+    #info-section{
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        font-size: 9pt;
+        display: grid;
+        float: left;
+        margin-left: 0;
+        line-height: 5pt;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    
+    #pastaName{
+        font-weight: 800;
+        font-size: 20pt;
+    }
+}
